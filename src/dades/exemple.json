@@ -1,0 +1,9 @@
+{
+	"compte": "yyyy yyyy yyyy yyyy yyyy",
+	"descripcio": "Compte de YYYY",
+	"moviments": 
+		[
+			{ "data": "xx/xx/xxxx", "moviment": "xxxxxxxxx", "import": "-9"},
+			{ "data": "yy/yy/yyyy", "moviment": "yyyyyyyy", "import": "99"},
+		]
+}
