@@ -14,13 +14,13 @@
       <template v-slot:top-right>
         <div class="row q-gutter-md">
              <!-- <div class="col"> -->
-              <q-select class="col-auto"color="grey-8" dense outlined label-color="orange" v-model="compteSeleccionat" :options="getComptes" label="Seleccionar compte">
+              <q-select class="col-auto bg-white" color="grey-8" dense outlined label-color="orange" v-model="compteSeleccionat" :options="getComptes" label="Seleccionar compte">
                 <template v-slot:append>
                   <q-icon name="description" color="orange" />
                 </template>
               </q-select>
               <q-space />
-              <q-select class="col-auto" color="grey-8" dense outlined label-color="orange" v-model="anySeleccionat" :options="getAnys" label="Seleccionar any">
+              <q-select class="col-auto bg-white" color="grey-8" dense outlined label-color="orange" v-model="anySeleccionat" :options="getAnys" label="Seleccionar any">
                 <template v-slot:append>
                   <q-icon name="event" color="orange" />
                 </template>
@@ -174,7 +174,7 @@ export default {
 
 
 <style lang="sass" scoped>
-  .capsalera 
+  .capsalera::v-deep
 
     /* height or max-height is important */
     height: 500px
