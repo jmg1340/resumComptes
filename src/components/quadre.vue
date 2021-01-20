@@ -9,6 +9,7 @@
       separator="cell"
       dense
       :pagination="initialPagination"
+      :rows-per-page-options="[0]"
       class="capsalera"
     >
       <template v-slot:top-right>
@@ -99,7 +100,7 @@ export default {
         sortBy: "desc",
         descending: false,
         page: 1,
-        rowsPerPage: 75
+        rowsPerPage: 0
       }
 			
     }
