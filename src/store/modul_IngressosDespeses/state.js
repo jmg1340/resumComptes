@@ -9,12 +9,10 @@ export default function () {
 
     // 3. Array de valors unics (unificats) de conceptes del any i compte seleccionat
     arrConceptesUnificats: [
-      "NATURGY", "CORRESP.", "OCASO", "IBERDROLA", 
-      "FATIR", "Iva", "PR.DE", "PR.FA",
-      "NOMINA"
+      'NATURGY', 'CORRESP.', 'OCASO', 'IBERDROLA',
+      'FATIR', 'DETIR', 'Iva', 'PR.DE', 'PR.FA',
+      'NOMINA', 'A.C.E.S.A', 'TAXI', 'MASPI'
     ]
-    
+
   }
 }
-
-

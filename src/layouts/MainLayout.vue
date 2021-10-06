@@ -26,17 +26,17 @@
       content-class="bg-grey-1"
     >
       <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
+        <q-item-label header class="text-grey-8">
           Menu
         </q-item-label>
-        <!-- <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        /> -->
+        <EssentialLink
+          v-for="obj in essentialLinks"
+          :title="obj.title"
+          :caption="obj.caption"
+          :key="obj.title"
+          :link="obj.link"
+          :icon="obj.icon"
+        />
       </q-list>
     </q-drawer>
 
@@ -47,61 +47,31 @@
 </template>
 
 <script>
-// import EssentialLink from 'components/EssentialLink.vue'
+import EssentialLink from "components/EssentialLink.vue";
 
 const linksData = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: "Quadre anual",
+    caption: "Quadre anual de comptes",
+    icon: "school",
+    link: "/"
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    title: "CSV",
+    caption: "CSV a JSON",
+    icon: "code",
+    link: "/CSV"
   }
-]
+];
 
 export default {
-  name: 'MainLayout',
-  // components: { EssentialLink },
-  data () {
+  name: "MainLayout",
+  components: { EssentialLink },
+  data() {
     return {
       leftDrawerOpen: false,
       essentialLinks: linksData
-    }
+    };
   }
-}
+};
 </script>
